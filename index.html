@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <script type="text/javascript" src="flowengine.js"></script>
+</head>
+<body>
+<script type="text/javascript">
+  runFlows([
+    {
+      id: 1,
+      true_id: 1,
+      false_id: 2,
+      body: function(i) {
+          return i.value < 1
+      }
+    },
+    {
+      id: 2,
+      true_id: 2,
+      false_id: 3,
+      body: function(i) {
+        return i.value < 1
+      }
+    },
+    {
+      id: 3,
+      body: function(i) {
+        return i.value === 1
+      }
+    },
+    {
+      id: 4,
+      true_id: null,
+      false_id: null,
+      body: function(i) {
+        return i.value === 1
+      }
+    }
+
+  ], '{"value": 1}')
+
+</script>
+</body>
+</html>

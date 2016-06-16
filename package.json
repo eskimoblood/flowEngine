@@ -1,0 +1,16 @@
+{
+  "name": "flowEngine",
+  "version": "1.0.0",
+  "description": "",
+  "main": "flowengine.js",
+  "scripts": {
+    "test": "node ./node_modules/mocha/bin/mocha test.js"
+  },
+  "keywords": [],
+  "author": "Andreas Köberle",
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "^2.5.3",
+    "sinon-chai": "^2.8.0"
+  }
+}
